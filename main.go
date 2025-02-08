@@ -3,8 +3,14 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Printf("Test")
-	for i := 0; i < 10; i++ {
-		fmt.Println(i)
+	var input, upper_limit, start int
+	fmt.Print("Print a table of? ")
+	fmt.Scan(&input)
+	fmt.Print("Starting from? ")
+	fmt.Scan(&start)
+	fmt.Print("Upto? ")
+	fmt.Scan(&upper_limit)
+	for i := start; i <= upper_limit; i++ {
+		fmt.Printf("%d * %d = %d\n", input, i, i*input)
 	}
 }
