@@ -1,13 +1,10 @@
 package main
 
-import (
-  "fmt"
-)
-func main() {
-  s := "gopher"
-  fmt.Println("Hello and welcome, %s!", s)
+import "fmt"
 
-  for i := 1; i <= 5; i++ {
-	fmt.Println("i =", 100/i)
-  }
+func main() {
+	fmt.Printf("Test")
+	for i := 0; i < 10; i++ {
+		fmt.Println(i)
+	}
 }
